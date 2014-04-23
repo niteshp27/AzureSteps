@@ -1,0 +1,134 @@
+.wizard{position: relative}
+.wizard, .tabcontrol {
+display: block;
+width: 100%;
+overflow: hidden;
+}
+.wizard>.content>.title {
+position: absolute;
+left: -999em;
+}
+
+.wizard>.content>.body {
+padding: 5px 20px;
+	width: 92%;
+	float: left;
+}
+
+.wizard>.actions {
+position: relative;
+display: block;
+text-align: right;
+width: 100%;
+right: 30px;
+bottom: 50px;
+}
+
+.wizard>.actions >ul >li a{color: #5f5f5f;}
+/*
+.wizard>.actions >ul >li a[href^="#prev"]{background: url("img/prev.png") no-repeat; height:24px;}
+.wizard>.actions >ul >li a[href^="#next"]{background: url("img/next.png") no-repeat; height:24px;}
+*/
+#pre{ 
+	background-color: rgb(30, 131, 174);
+	min-height: 460px;
+	width: 20px;
+	float: left;
+	margin: 0 5px;
+	color: #fff;
+	display:none;
+	text-align: center;
+}
+
+#post{ 
+	background-color: rgb(30, 131, 174);
+	min-height: 460px;
+	width: 20px;
+	float: right;
+	margin: 0 5px; 
+	color: #fff;
+	text-align: center;
+}
+.actions a i {
+	font-size: 150%;
+}
+.tabcontrol>.content {
+position: relative;
+display: inline-block;
+width: 87%;
+min-height: 435px;
+overflow: hidden;
+/*border-left: 1px solid #bbb;
+border-bottom: 1px solid #bbb;
+border-right: 1px solid #bbb;
+*/
+padding-top: 5px;
+/*border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+*/
+}
+
+.clearfix:before, .clearfix:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+.wizard ul>li, .tabcontrol ul>li {
+display: block;
+padding: 0;
+}
+.tabcontrol>.steps{
+display: none;
+width: 96%;
+margin: 0 auto;
+}
+
+.tabcontrol>.steps>ul{
+padding: 0;
+margin: 0;
+height: 43px;
+border-bottom: 1px solid #bbb;
+}
+
+.tabcontrol>.steps>ul>li {
+float: left;
+margin: 5px 2px 0 0;
+padding: 1px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.tabcontrol>.steps>ul>li.current {
+background: #fff;
+border: 1px solid #bbb;
+border-bottom-color: transparent; 
+padding: 0 0 1px 0;
+margin: 0;
+}
+
+.tabcontrol>.steps>ul>li>a {
+color: #5f5f5f;
+display: inline-block;
+border: none;
+margin: 0;
+padding: 10px 30px;
+text-decoration: none;
+}
+
+.tabcontrol>.steps>ul>li>a:hover {
+text-decoration: none;
+}
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+.wizard .steps ul li {display: inline-block; margin: 0 5px;}
+.wizard .actions ul li {display: inline-block; margin: 5px;}
